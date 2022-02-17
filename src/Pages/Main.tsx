@@ -1,13 +1,33 @@
 import React from "react";
-import Header from '../Components/Header/Header';
+import { useState } from "react";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { AiOutlineMinus } from 'react-icons/ai';
+import Navbar from "../Components/Navbar/Navbar";
 
 const Main = () => {
+    const [isActive, setIsActive] = useState(true);
+    const name = "Fernando Ortega";
+    document.title = name;
 
-    const avatar = "https://avatars.githubusercontent.com/u/62727802?s=400&u=a5138f9a5a747fcb8236628ea17d09335266a53e&v=4";
+    function activateNavbar(){
+        setIsActive(!isActive)
+    }
+
     return (
-        <div className="bg-mainColorLight h-screen">
-            <Header />
-            {/* <img className="w-20 bg-red-400" src={avatar} alt="my person"/> */}
+        <div className="bg-mainColorLight w-full h-screen flex flex-wrap min-h-screen landscape:h-max">
+            <div className={`${isActive ? 'block': 'hidden'} lg:hidden p-3`}>
+                <HiMenuAlt3 size={40} role="button" onClick={activateNavbar}/>
+            </div>
+            <div className={`${isActive ? 'hidden': 'block'} bg-secondColorLight p-3 fixed lg:hidden`}>
+                <AiOutlineMinus size={40} role="button" onClick={activateNavbar}/>
+            </div>
+            <Navbar active={isActive}/>
+            <div className={`${!isActive? 'hidden': 'w-full h-full'}`}>
+                <p>Hola </p>
+                <p>Hola </p>
+                <p>Hola </p>
+                <p>Hola </p>
+            </div>
         </div>
     );
 }
