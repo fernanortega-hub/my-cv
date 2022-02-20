@@ -1,16 +1,14 @@
 import React from "react";
-import { HiOutlineArrowNarrowDown, HiOutlineArrowNarrowUp } from "react-icons/hi";
-import { scrollPageDown, scrollPageUp } from "../../ScrollFuntions";
+import { ScrollUp, ScrollDown } from "../ScrollControl/ScrollControls";
 import {
     SiNextdotjs, SiReact, SiHtml5, SiCss3, SiTailwindcss,
     SiTypescript, SiJavascript, SiGithub, SiGit, SiDotnet, SiCsharp, SiCplusplus, SiMicrosoftsqlserver, SiMongodb
 } from "react-icons/si";
+
 const Skill = () => {
     return (
         <div className="w-full h-screen p-6 flex flex-col justify-center items-center space-y-3 relative">
-            <button onClick={() => scrollPageUp()}>
-                <HiOutlineArrowNarrowUp className="absolute right-6 top-7 w-7 h-7 animate-bounce hover:text-secondaryColorLight md:h-9 md:w-9" />
-            </button>
+            <ScrollUp message="Sobre mi" addClass="top-[12%] -right-3"/>
             <span className="text-xl font-semibold text-secondaryColorLight md:text-4xl"> Mis habilidades </span>
             <div className="w-3/4 h-3/4 grid grid-cols-3 items-center justify-items-center gap-1 md:w-2/4">
                 <SiNextdotjs size={40} className="md:w-[4rem] md:h-[4rem]"
@@ -42,9 +40,7 @@ const Skill = () => {
                 <SiMongodb size={40} className="text-green-600 md:w-[4rem] md:h-[4rem]"
                     title="MongoDb" role="button" />
             </div>
-            <button onClick={() => scrollPageDown()}>
-                <HiOutlineArrowNarrowDown className="absolute right-6 bottom-6 w-7 h-7 animate-bounce hover:text-secondaryColorLight md:h-9 md:w-9" />
-            </button>
+            <ScrollDown message="Experiencia" addClass="bottom-[12%] -right-6"/>
         </div>
 
     );
