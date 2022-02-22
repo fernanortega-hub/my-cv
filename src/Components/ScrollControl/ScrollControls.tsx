@@ -6,7 +6,7 @@ import { scrollPageDown, scrollPageUp } from "../../ScrollFuntions";
 
 export const ScrollUp: FC<ExtendedPropsControl> = ({ message, addClass }) => {
     return (
-        <button id="buttonUp" className={`flex items-center text-gray-500 text-xs absolute ${addClass} md:text-sm`} 
+        <button id="buttonUp" className={`flex items-center text-gray-500 text-xs absolute ${addClass} md:text-lg `} 
             onClick={() => scrollPageUp()}>
             {message}
             <HiOutlineArrowNarrowRight className="text-black w-6 h-6 ml-4" />
@@ -16,7 +16,7 @@ export const ScrollUp: FC<ExtendedPropsControl> = ({ message, addClass }) => {
 
 export const ScrollDown: FC<ExtendedPropsControl> = ({ message, addClass }) => {
     return (
-        <button id="buttonDown" className={`flex items-center text-gray-500 text-xs absolute ${addClass} md:text-sm`} 
+        <button id="buttonDown" className={`flex items-center text-gray-500 text-xs absolute ${addClass} md:text-lg`} 
             onClick={() => scrollPageDown()}>
             {message}
             <HiOutlineArrowNarrowRight className="text-black w-6 h-6 ml-4" />
