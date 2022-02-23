@@ -1,7 +1,8 @@
 import React from "react";
-import Presentation from "../Components/Presentation/Presentation";
-import AboutMe from "../Components/AboutMe/AboutMe";
-import Skill from "../Components/Skills/Skills";
+import Presentation from "../Components/CvComponents/Presentation/Presentation";
+import AboutMe from "../Components/CvComponents/AboutMe/AboutMe";
+import Skill from "../Components/CvComponents/Skills/Skills";
+import Experience from "../Components/CvComponents/Experience/Experience";
 
 
 const Main = () => {
@@ -13,6 +14,7 @@ const Main = () => {
             <Presentation />
             <AboutMe />
             <Skill/>
+            <Experience/>
         </div>
     );
 }

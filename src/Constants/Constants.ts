@@ -1,0 +1,1 @@
+export const SizeControlsIcons = 'w-6 h-6 md:w-8 md:h-8';
