@@ -16,7 +16,8 @@ module.exports = {
         cplusplus: '#0E4283',
       },
       screens: {
-        'xs': '320px',
+        'xxs': '320px',
+        'xs': '400px',
       }
     },
   },

@@ -3,6 +3,11 @@ export interface ExtendedPropsControl {
     icon: any;
 }
 
-export interface ExtendedContainerProps {
+export interface ExtendedProps {
     addClass?: string;
+}
+
+export interface ExperienceCardProps extends ExtendedPropsControl{
+    title: string;
+    url: string;
 }
