@@ -11,17 +11,7 @@ import { SizeExperienceIcons } from "../../../Constants/Constants";
 import ExperienceCard from "./ExperienceCard/ExperienceCard";
 
 const Experience = () => {
-
-    function timeLine(size: string) {
-        return (
-            <div className={`${size} flex flex-row items-center -space-x-1 bg-red-300`}>
-                <div className="h-2 w-2 rounded-full bg-secondaryColorLight" />
-                <div className={`h-1 w-full bg-secondaryColorLight`} />
-                <div className="h-1 w-3 border-solid border-y-[5px] border-transparent border-l-[12px] border-l-secondaryColorLight" />
-            </div>
-        );
-    }
-
+    
     return (
         <CenteredContainter>
             <ScrollUp message="Habilidades" icon={<GiSkills className={`${SizeControlsIcons} rotate-90`} />} />
