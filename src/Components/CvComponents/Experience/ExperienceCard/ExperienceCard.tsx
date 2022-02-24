@@ -6,7 +6,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ message, icon, title, url }) 
     return (
         <div
             className={`w-full h-full flex flex-col p-4 items-center 
-                border-accentColorLight border-2 border-auto space-y-2 min-w-min overflow-y-auto`}
+                border-secondaryColorLight border-2 rounded-lg border-auto space-y-2 min-w-min overflow-y-auto`}
         >
             <div className="flex flex-col items-center space-y-2 justify-center">
                 <a href={url} target='_blank' rel="noreferrer" className="hover:text-cyan-600"> {icon} </a>

@@ -20,18 +20,18 @@ const Experience = () => {
                 <div className="flex flex-row space-x-2 h-full">
                     <ExperienceCard icon={<FaLaptopCode className={`${SizeExperienceIcons}`} />}
                         url="https://github.com/fernanortega-hub/LibreriaGenius.git"
-                        message='Programa de consola en C++ con colas, pilas y listas para el manejo de la libreria Genius'
+                        message='Programa de consola en C++ con colas, pilas y listas para el manejo de la librería Genius'
                         title="Programación con C++ y estructuras dinámicas" />
 
                     <ExperienceCard icon={<BsWindowSidebar className={`${SizeExperienceIcons}`} />}
                         url="https://github.com/fernanortega-hub/ClinicaUCA.git"
-                        message={`Windows Form Application donde se implementa las conexiones a una BD en SQL Server y se gestionan citas de la Clinica UCA`}
+                        message={`Windows Form Application donde se implementan las conexiones a una BD en SQL Server y se gestionan citas de la Clínica UCA`}
                         title="Programación con C# y .NET Framework (EF)" />
 
                     <ExperienceCard icon={<BsWindowSidebar className={`${SizeExperienceIcons}`} />}
                         url="https://github.com/fernanortega-hub/WFA-COVID.git"
-                        message='Con la problemática de la pandemia por COVID-19 se crea un Windows Form App con la implementación de Data First,
-                        donde la BD está hecha con SQL Server y la interfaz gráfica con C# y .NET Framework'
+                        message='Con la problemática de la pandemia por COVID-19 se crea una Windows Form App con la implementación de Data First,
+                        donde la BD está desarrollada con SQL Server y la interfaz gráfica con C# y .NET Framework'
                         title="Programación con C# y .NET Framework (EF) con Data First" />
 
                     <ExperienceCard icon={<MdOutlineWeb className={`${SizeExperienceIcons}`} />}
@@ -43,14 +43,14 @@ const Experience = () => {
 
                     <ExperienceCard icon={<MdOutlineWeb className={`${SizeExperienceIcons}`} />}
                         url="https://ceii-uca.com/"
-                        message="Desempeñando el rol como Frontend Developer, participo en la creación de la página 
-                        principal de Comunidad Estudiantil de Ingeniería Informática hecha con Next.js y React.js con TypeScript, TailwindCSS para los estilos de el sitio"
+                        message="Desempeñando el rol como Frontend Developer, participé en la creación de la página 
+                        principal de Comunidad Estudiantil de Ingeniería Informática hecha con Next.js y React.js con TypeScript, TailwindCSS fue utilizado para los estilos del sitio web"
                         title="Página principal de el CEII UCA con Next.js/React.js"
                     />
 
                     <ExperienceCard icon={<FaLaptopCode className={`${SizeExperienceIcons}`} />}
                         url="#"
-                        message="Actualmente participo en una nueva version de la API del CEII utilizando .NET CORE y PostgreSQL"
+                        message="Actualmente participo en el desarrollo de la nueva versión de la API del CEII utilizando .NET CORE y PostgreSQL"
                         title="API CEII UCA"
                     />
                 </div>

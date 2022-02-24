@@ -10,7 +10,7 @@ const ContactMe = () => {
     return (
         <>
             <CenteredContainter>
-                <ScrollUp message={""} icon={<GiStarsStack className={`${SizeControlsIcons} rotate-90`} />} />
+                <ScrollUp message={"Experiencia"} icon={<GiStarsStack className={`${SizeControlsIcons} rotate-90`} />} />
                 <span className="text-xl font-semibold text-secondaryColorLight md:text-3xl"> Contactos </span>
                 <span className="text-lg font-semibold md:text-xl flex flex-row items-center space-x-1"> No dudes en contactarme <BsFillLightningFill className="text-yellow-500 w-4 h-4" /> </span>
                 <div className="flex w-full md:w-3/5 items-center justify-around">
