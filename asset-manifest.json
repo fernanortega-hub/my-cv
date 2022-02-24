@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fernanortega-hub/my-cv/static/css/main.cac9c872.css",
+    "main.js": "/fernanortega-hub/my-cv/static/js/main.8b516893.js",
+    "index.html": "/fernanortega-hub/my-cv/index.html",
+    "main.cac9c872.css.map": "/fernanortega-hub/my-cv/static/css/main.cac9c872.css.map",
+    "main.8b516893.js.map": "/fernanortega-hub/my-cv/static/js/main.8b516893.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cac9c872.css",
+    "static/js/main.8b516893.js"
+  ]
+}
