@@ -14,6 +14,7 @@ module.exports = {
         dotnet: '#5027D5',
         csharp: '#953DAC',
         cplusplus: '#0E4283',
+        linkedin: '#1A61B8',
       },
       screens: {
         'xxs': '320px',

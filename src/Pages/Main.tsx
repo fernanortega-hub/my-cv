@@ -3,6 +3,7 @@ import Presentation from "../Components/CvComponents/Presentation/Presentation";
 import AboutMe from "../Components/CvComponents/AboutMe/AboutMe";
 import Skill from "../Components/CvComponents/Skills/Skills";
 import Experience from "../Components/CvComponents/Experience/Experience";
+import ContactMe from "../Components/CvComponents/ContactMe/ContactMe";
 
 
 const Main = () => {
@@ -15,6 +16,7 @@ const Main = () => {
             <AboutMe />
             <Skill/>
             <Experience/>
+            <ContactMe/>
         </div>
     );
 }
