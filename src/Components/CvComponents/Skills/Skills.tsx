@@ -1,14 +1,10 @@
 import React, { useState } from "react";
-import { ScrollUp, ScrollDown } from "../../ScrollControls/ScrollControls";
 import 
 {
     SiNextdotjs, SiReact, SiHtml5, SiCss3, SiTailwindcss,
     SiTypescript, SiJavascript, SiGithub, SiGit, SiDotnet, SiCsharp, SiCplusplus, SiMicrosoftsqlserver, SiMongodb
 } from "react-icons/si";
 import CenteredContainter from "../../Containers/CenteredContainer";
-import { BsFilePersonFill } from 'react-icons/bs';
-import { GiStarsStack } from 'react-icons/gi';
-import { SizeControlsIcons } from "../../../Constants/Constants";
 
 
 const Skill = () => {
@@ -24,7 +20,6 @@ const Skill = () => {
     }
     return (
         <CenteredContainter>
-            <ScrollUp message="Sobre mi" icon={<BsFilePersonFill className={`${SizeControlsIcons} rotate-90`}/>}/>
             <span className="text-xl font-semibold text-secondaryColorLight md:text-4xl p-1"> {skillName} </span>
             <div className="w-3/4 h-3/4 grid grid-cols-3 items-center justify-items-center gap-1 md:w-2/4">
                 <SiNextdotjs size={40} className="md:w-[3rem] md:h-[3rem] lg:h-[5rem] lg:w-[5rem]"
@@ -56,7 +51,6 @@ const Skill = () => {
                 <SiMongodb size={40} className="text-green-600 md:w-[3rem] md:h-[3rem] lg:h-[5rem] lg:w-[5rem]"
                     title="MongoDb" role="button" onClick={() => onClickChangeTxt('MongoDB')} />
             </div>
-            <ScrollDown message="Experiencia" icon={<GiStarsStack className={`-rotate-90 ${SizeControlsIcons}`}/>} />
         </CenteredContainter>
 
     );

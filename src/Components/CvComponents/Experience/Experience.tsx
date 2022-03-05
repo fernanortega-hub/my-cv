@@ -1,9 +1,5 @@
 import React from "react";
-import { ScrollUp, ScrollDown } from "../../ScrollControls/ScrollControls";
 import CenteredContainter from "../../Containers/CenteredContainer";
-import { GiSkills } from 'react-icons/gi';
-import { TiContacts } from 'react-icons/ti';
-import { SizeControlsIcons } from "../../../Constants/Constants";
 import { FaLaptopCode } from 'react-icons/fa';
 import { BsWindowSidebar } from 'react-icons/bs';
 import { MdOutlineWeb } from 'react-icons/md';
@@ -14,7 +10,6 @@ const Experience = () => {
     
     return (
         <CenteredContainter>
-            <ScrollUp message="Habilidades" icon={<GiSkills className={`${SizeControlsIcons} rotate-90`} />} />
             <span className="text-xl font-semibold text-secondaryColorLight md:text-3xl"> Experiencia y proyectos </span>
             <div className="flex flex-col overflow-x-auto space-y-2 w-full h-[60%] overflow-y-hidden xs:w-[85%] xs:h-max sm:w-4/5 md:w-3/4">
                 <div className="flex flex-row space-x-2 h-full">
@@ -55,8 +50,6 @@ const Experience = () => {
                     />
                 </div>
             </div>
-
-            <ScrollDown message="Contactame!" icon={<TiContacts className={`${SizeControlsIcons} -rotate-90`} />} />
         </CenteredContainter>
     );
 };
